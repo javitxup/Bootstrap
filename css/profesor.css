@@ -1,0 +1,66 @@
+body {
+    background-color: RGB(55, 86, 153);
+    color: #ffffff;
+    margin: 0;
+}
+
+
+header {
+    width: 100% !important;
+    height: 5%;
+    background-color: aqua;
+    Z-index: initial;
+}
+
+i {
+    font-size: 3em;
+    margin-left: 2%;
+}
+
+#ver {
+    height: 100vh;
+    background-color: aqua;
+    width: 8em;
+    font-size: 2em;
+}
+
+img#user {
+    height: 6em;
+    margin-left: 1em;
+}
+
+img#logo {
+    height: 8em;
+}
+
+img {
+    padding-bottom: 2em;
+}
+
+p#nombre {
+    display: inline;
+    font-size: 3em;
+    padding-left: 15%;
+}
+
+label {
+    font-size: 8em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: 7em;
+    font-size: larger;
+}
+
+.fa {
+    font-size: 3em;
+
+}

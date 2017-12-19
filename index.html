@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido...</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        function comprobar() {
+            var email = document.getElementsByName("usuario")[0].value;
+            var mail = email.split("@");
+            if (mail[1] == "juandecolonia.com") {
+                window.open("html/profesor.html");
+            } else {
+                window.open("html/alumno.html");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="img/juan.png" alt="logo">
+
+    </header>
+    <main>
+        <form>
+            <label>Usuario: <input type="Email" name="usuario" placeholder="xx@xx.xx" required> </label> <br>
+            <label>Contraseña: <input type="password" minlength="6" required></label><br>
+            <input type="submit" onclick="comprobar()">
+        </form>
+    </main>
+    <footer>
+        <p>
+            Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
+        </p>
+        <p>
+            TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
+        </p>
+    </footer>
+    <script src="js/bootstrap.min.js" ></script>
+</body>
+
+</html>
