@@ -54,6 +54,10 @@ h1 {
     position: absolute;
 }
 
+.image{
+    text-align: center;
+}
+
 
 @media (min-width:574px) {
     body {
