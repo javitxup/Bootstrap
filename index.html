@@ -2,9 +2,14 @@
 <html lang="es">
 
 <head>
+
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Bienvenido...</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
         function comprobar() {
             var email = document.getElementsByName("usuario")[0].value;
@@ -20,17 +25,28 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/juan.png" alt="logo">
-
-    </header>
-    <main>
-        <form>
-            <label>Usuario: <input type="Email" name="usuario" placeholder="xx@xx.xx" required> </label> <br>
-            <label>Contraseña: <input type="password" minlength="6" required></label><br>
-            <input type="submit" onclick="comprobar()">
-        </form>
-    </main>
+    <div class="image">
+        <img src="img/juan.png" alt="logo" width="30%">
+    </div>
+    <div class="container">
+        <div class="row justify-content-xs-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+            <main>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="usuario1">Usuario</label>
+                        <input type="usuario" class="form-control" id="usuario1" placeholder="Introduce tu usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Contraseña</label>
+                        <input type="password" class="form-control" id="password1" placeholder="Contraseña">
+                    </div>
+                    <div class="row justify-content-xs-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                        <button type="submit" class="btn btn-success">Aceptar</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
     <footer>
         <p>
             Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
@@ -39,7 +55,9 @@
             TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
         </p>
     </footer>
-    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
