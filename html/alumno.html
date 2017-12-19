@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="container">
-    <div class="row">
-        <header class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <section id="ver">
-                        <img id="logo" src="../img/juan.png" alt="logo" width="100%">
-                    <!-- <img id="user" src="../img/usericon.png" alt="user" width="100%">-->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 superior">
+                <label for="btn-menu" class="fa fa-bars"></label>
+                <input type="checkbox" id="btn-menu">
+                <section id="ver">
+                    <img id="logo" src="../img/juan.png" alt="logo" width="50%">
+                    <img id="user" src="../img/usericon.png" alt="user" width="50%">
                     <nav class="navbar navbar-dark bg-dark">
                         <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <li class="nav-item"><a class="nav-link" href="">Modulo1</a></li>
@@ -26,15 +29,15 @@
                             <li class="nav-item"><a class="nav-link" href="">Modulo6</a></li>
                         </ul>
                     </nav>
-            </section>
-        </header>
-        <main class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                </section>
+            </div>
+            <main class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <section id="contenido">
                     <header>
                         <h1> NOMBRE MODULO </h1>
                     </header>
                     <div>
-                        <table>
+                        <table class="table">
                             <tr>
                                 <th>TAREAS</th>
                                 <th>NOTAS</th>
@@ -53,7 +56,7 @@
                             </tr>
                         </table>
 
-                        <table>
+                        <table class="table">
                             <tr>
                                 <th>EXAMENES</th>
                                 <th>NOTAS</th>
@@ -72,10 +75,14 @@
                             </tr>
                         </table>
                     </div>
-                    <p>NOTA FINAL -> 6</p>
+                    <div class="notaFinal">
+                        <p>NOTA FINAL -> 6</p>
+                    </div>
                 </section>
-        </main>
+            </main>
+        </div>
     </div>
+    
     <footer>
         <p>
             Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
@@ -84,9 +91,9 @@
             TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
         </p>
     </footer>
-    <script src="../js/jquery.min.js" ></script>
+    <script src="../js/jquery.min.js"></script>
     <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-    <script src="../js/bootstrap.min.js" ></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

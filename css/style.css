@@ -4,6 +4,82 @@ footer {
     margin: auto;
     border-top: 1px grey solid;
 }
+
 footer p {
     text-align: center;
+}
+
+table.table td {
+    width: 20em;
+}
+
+.notaFinal p {
+    text-align: right;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Menú */
+
+#ver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    margin: auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.69);
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu:checked ~ #ver {
+    display: block;
+}
+    
+.fa {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.superior{
+    z-index: 100;
+    position: absolute;
+}
+
+
+@media (min-width:574px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 81px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    #ver {
+        display: block;
+        background: none;
+    }
+    #btn-menu {
+        display: none;
+    }
+    .fa {
+        display: none;
+    }
+    
+    #ver {
+        position: relative;
+    }
+    
 }
