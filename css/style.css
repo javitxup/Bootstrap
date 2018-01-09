@@ -26,6 +26,7 @@ h1 {
 /* Menú */
 
 #ver {
+    z-index: 1000;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,7 +34,13 @@ h1 {
     display: none;
     margin: auto;
     text-align: center;
-    background: rgba(0, 0, 0, 0.69);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#ver img {
+    width: 20%;
+    display: block;
+    margin: auto;
 }
 
 #btn-menu {
@@ -42,6 +49,13 @@ h1 {
 
 #btn-menu:checked ~ #ver {
     display: block;
+    height: 100vh;
+}
+
+#btn-menu:checked ~ #ver li{
+    margin: auto;
+    width: 10em;
+    border-bottom: 1px white solid;
 }
     
 .fa {
@@ -58,6 +72,35 @@ h1 {
     text-align: center;
 }
 
+a.button-a{
+    display: inline-block;
+    background: #5cb85c;
+    color: white;
+    padding: .5em;
+    margin: .2em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    min-height: calc(100vh - 112px);
+}
+
+form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 10em;
+}
+
+label {
+    text-align: left;
+    width: 10em;
+    display: block;
+    margin: auto;
+}
+
 
 @media (min-width:574px) {
     body {
@@ -72,8 +115,9 @@ h1 {
     }
     
     #ver {
-        display: block;
         background: none;
+        display: block;
+        position: relative
     }
     #btn-menu {
         display: none;
@@ -81,9 +125,21 @@ h1 {
     .fa {
         display: none;
     }
-    
-    #ver {
-        position: relative;
+    .navbar {
+        flex-direction: row;
+        align-items: center;
     }
+    .nav-item {
+        display: inline-block;
+    }
+    
+    nav ul {
+        display: inline;
+    }
+    
+    #contenido {
+        text-align: center;
+    }
+   
     
 }
