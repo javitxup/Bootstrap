@@ -101,6 +101,19 @@ label {
     margin: auto;
 }
 
+#imagen-activa {
+    max-width: 100%;
+}
+
+.imagenes img:hover {
+    filter: brightness(60%)
+}
+
+.current-image {
+    border: 1px black dotted;
+    filter: brightness(120%)
+}
+
 
 @media (min-width:574px) {
     body {

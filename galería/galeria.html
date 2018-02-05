@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+               <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <label for="btn-menu" class="fa fa-bars"></label>
+                <input type="checkbox" id="btn-menu">
+                <section id="ver">
+                    <img id="logo" src="../img/juan.png" alt="logo" width="50%">
+                    <img id="user" src="../img/usericon.png" alt="user" width="50%">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item"><a class="nav-link" href="">Modulo1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo3</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo4</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo5</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo6</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <main class="col-xs-11 col-sm-8 col-md-8 col-lg-8">
+                <img id="imagen-activa" src="images/giphy.webp" alt="imagen de que está cargando">
+            </main>
+            <section id="galery" class="imagenes col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <img src="images/Chrysanthemum.jpg" alt="Chrysanthemum" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Desert.jpg" alt="Desert" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Hydrangeas.jpg" alt="Hydrangeas" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Jellyfish.jpg" alt="Jellyfish" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Lighthouse.jpg" alt="Lighthouse" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Penguins.jpg" alt="Penguins" width="150px" onclick="cambiaImagen(this)">
+                <img src="images/Tulips.jpg" alt="Tulips" width="150px" onclick="cambiaImagen(this)">
+            </section>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
+        </p>
+        <p>
+            TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
+        </p>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/galery.js"></script>
+</body>
+
+</html>
