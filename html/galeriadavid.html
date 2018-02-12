@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ALUMNO</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1> GALERIA DE LENGUAJES DE PROGRAMACION</h1>
+    </header>
+    <main>
+        <div id="gallery">
+            <a href="../img/imagen/PHP.jpg"><img src="../img/img-peq/PHP.jpg" width="70" alt="PHP"></a>
+            <a href="../img/imagen/JS.jpg"><img src="../img/img-peq/JS.jpg" width="70" alt="JS"></a>
+            <a href="../img/imagen/HTML5.jpg"><img src="../img/img-peq/HTML5.jpg" width="70" alt="HTML5"></a>
+            <a href="../img/imagen/CSS3.jpg"><img src="../img/img-peq/CSS3.jpg" width="70" alt="CSS3"></a>
+            <a href="../img/imagen/Jquery.jpg"><img src="../img/img-peq/Jquery.jpg" width="70" alt="JQUERY"></a>
+            <a href="../img/imagen/BS.jpg"><img src="../img/img-peq/BS.jpg" width="70" alt="BOOTSTRAP">
+            </a>
+            <a href="../img/imagen/mysql.jpg"><img src="../img/img-peq/mysql.jpg" width="70" alt="MYSQL">
+            </a>
+        </div>
+        <div id="photo">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
+        </p>
+        <p>
+            TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
+        </p>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(event) {
+                var a_href = $(this).attr('href');
+                $("#photo").css("background-image", "url(" + a_href + ")");
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
