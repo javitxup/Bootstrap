@@ -22,7 +22,7 @@ div#gallery > a > img:hover {
 }
 
 
-video {
+video,iframe{
     max-width: 100%;
     margin: 0 auto;
     display: block;
@@ -30,7 +30,9 @@ video {
 
 main {
     margin: auto;
+	min-height:56vh;
 }
+
 
 footer {
     background: RGB(55, 86, 153);
@@ -163,6 +165,11 @@ transition-property: all;
 
 
 @media (min-width:574px) {
+iframe{
+	width:560px; height:315px;
+
+}
+
     body {
         position: relative;
         min-height: 100vh;
