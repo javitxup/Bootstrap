@@ -1,28 +1,34 @@
-div#gallery {
-    width: 90px;
-    height: 458px;
-    display: inline-block;
-    float: right;
-    margin: auto;
-    overflow-y: scroll;
-}
+
 
 div#photo {
-    display: inline-block;
     background: url(../img/imagen/PHP.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 610px;
-    height: 458px;
-    float: left;
+    height: 100vh;
+    max-width: 100%;	
 }
+
+div#gallery {
+    width: 370px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+    margin: auto;
+    overflow-y: scroll;}
+
 
 div#gallery > a > img:hover {
     opacity: 0.5;
 }
 
+
+video {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
 main {
-    width: 800px;
     margin: auto;
 }
 
@@ -130,6 +136,30 @@ label {
     display: block;
     margin: auto;
 }
+.item{
+	width:30%;
+	display: inline-block;
+    text-align:center;
+}
+.item > a:hover{
+transition-property: all;
+  transition-duration:1s;
+	background: RGB(249, 201, 90);
+	color:#000000;
+}
+.item > a{
+	background: RGB(55, 86, 153);
+	color: white;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+#cod{
+    display: block;
+    margin: 1em auto;
+	max-width:100%;
+}
 
 
 @media (min-width:574px) {
@@ -171,7 +201,26 @@ label {
         text-align: center;
     }
 
-
-
-
 }
+
+@media (min-width:841px){
+	main{
+		width:800px;
+	}
+	
+	div#photo {
+		display: inline-block;
+		background: url(../img/imagen/PHP.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 610px;
+		height: 458px;
+	}
+	
+	div#gallery {
+		width: 90px;
+		height: 470px;
+		float: right;}
+	}
+}
+

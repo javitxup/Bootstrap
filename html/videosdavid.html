@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>TOP 10 LENGUAJES DE PROGRAMACION</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1> TOP 10 LENGUAJES DE PROGRAMACION</h1>
+    </header>
+    <main>
+		<video autoplay controls> 
+			<source src="../video/programacion.mp4" type="video/mp4"> 
+			<source src="../video/programacion.ogg" type="video/ogg"> 
+			<p>Su navegador no puede reproducir el archivo, lo puede descargar desde <a href="../video/programacion.mp4">aqui</a></p> 
+		</video>
+    </main>
+    <footer>
+        <p>
+            Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
+        </p>
+        <p>
+            TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
+        </p>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(event) {
+                var a_href = $(this).attr('href');
+                $("#photo").css("background-image", "url(" + a_href + ")");
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
