@@ -105,14 +105,17 @@ label {
     max-width: 100%;
 }
 
-.imagenes img:hover {
-    filter: brightness(60%)
+#imagen-activa img {
+    transition: 2s all;
+}
+.imagenes img:hover, .imagenes img:focus, .imagenes img:active {
+    filter: brightness(60%);
 }
 
 .current-image {
-    border: 1px black dotted;
-    filter: brightness(120%)
+    filter: brightness(60%)
 }
+
 
 
 @media (min-width:574px) {
@@ -148,6 +151,13 @@ label {
     
     nav ul {
         display: inline;
+    }
+    nav li{
+        box-shadow: 10px 0 white inset;
+        transition: 1s box-shadow;
+    }
+    nav li:hover {
+        box-shadow: 200px 0 #d4d4d4 inset;
     }
     
     #contenido {
