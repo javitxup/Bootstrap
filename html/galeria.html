@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>GALERIA DE IMAGENES</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    
+    <script src="../js/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+		
+$('#gallery img').each(function(i) {
+	var imgFile = $(this).attr('src');
+	var preloadImage = new Image();
+  var imgExt = /(\.\w{3,4}$)/;
+  preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		
+	$(this).hover(
+		function() {
+			$(this).attr('src', preloadImage.src);
+		},
+		function () {
+		var currentSource=$(this).attr('src');
+			$(this).attr('src', imgFile);
+	}); // end hover
+}); // end each
+	
+	$('#gallery a').click(function(evt) {
+		//don't follow link
+		 evt.preventDefault();
+		 //get path to new image
+	   var imgPath = $(this).attr('href');
+		 //get reference to old image
+		 var oldImage = $('#photo img');
+		 			
+			 //create HTML for new image
+			 var newImage = $('<img src="' + imgPath +'">');
+			 //make new image invisible
+			 newImage.hide();
+			 //add to the #photo div
+			 $('#photo').prepend(newImage);
+			 //fade in new image
+			 newImage.fadeIn(1000);
+			 
+			 //fade out old image and remove from DOM
+			 oldImage.fadeOut(1000,function(){
+		     $(this).remove();
+				});
+			 
+		 
+	}); // end click
+		
+		$('#gallery a:first').click();
+}); // end ready
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
+                <label for="btn-menu" class="fa fa-bars"></label>
+                <input type="checkbox" id="btn-menu">
+                <section id="ver">
+                    <img id="logo" src="../img/juan.png" alt="logo" width="50%">
+                    <img id="user" src="../img/usericon.png" alt="user" width="50%">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item"><a class="nav-link" href="">Modulo1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo3</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo4</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo5</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Modulo6</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Vídeo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">YouTube</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <main class="col-xs-12 col-sm-10 col-md-9 col-lg-9">
+                <section id="contenido">
+                    <header>
+                        <h1> GALERIA DE IMAGENES </h1>
+                    </header>
+                    <div id="galeria">
+                        <a href="../img/large/slide1.jpg"><img src="../img/small/slide1.jpg" width="70" height="70" alt="golf balls"></a> <a href="../img/large/slide2.jpg"><img src="../img/small/slide2.jpg" width="70" height="70" alt="rock wall"></a> <a href="../img/large/slide3.jpg"><img src="../img/small/slide3.jpg" width="70" height="70" alt="old course"></a> <a href="../img/large/slide4.jpg"><img src="../img/small/slide4.jpg" width="70" height="70" alt="tees"></a> <a href="../img/large/slide5.jpg"><img src="../img/small/slide5.jpg" width="70" height="70" alt="tree"></a> <a href="../img/large/slide6.jpg"><img src="../img/small/slide6.jpg" width="70" height="70" alt="ocean course"></a>
+
+                        
+                    </div>
+                    <div id="photo"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+            Centro Integrado de FP Juan de Colonia - Francisco de Vitoria s/n - 09006 Burgos
+        </p>
+        <p>
+            TEL: 947245004 - FAX: 9470245072 - Email: contacto@juandecolonia.es
+        </p>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
